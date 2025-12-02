@@ -3,17 +3,16 @@
 <head>
     <title>Abraxas Wax | Contact</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/record-nobackground.png">
 </head>
+
 <body>
     <header>
         <h1>Abraxas Wax</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-        </nav>
+        <div id="nav"></div>
+        <script>
+            fetch("navbar.html").then(res => res.text()).then(data => {document.getElementById("nav").innerHTML = data;});
+        </script>
     </header>
 
     <main class="contact">
@@ -45,4 +44,3 @@
         <p>&copy; 2025 Abraxas Wax | Eau Claire, WI</p>
     </footer>
 </body>
-</html>

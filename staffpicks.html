@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Abraxas Wax | Staff Picks</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/record-nobackground.png">
+</head>
+
+<body>
+    <header>
+        <h1>Abraxas Wax</h1>
+        <div id="nav"></div>
+        <script>
+            fetch("navbar.html").then(res => res.text()).then(data => {document.getElementById("nav").innerHTML = data;});
+        </script>
+    </header>
+
+    <main class="about">
+        <h3>Staff Picks</h3>
+        <p>Here's what our team is spinning this month:</p>
+
+        <ul>
+            <li><strong>Mark:</strong> Miles Davis – <em>Kind of Blue</em><br>
+                “The perfect album for late-night listening.”</li>
+
+            <li><strong>Sara:</strong> Phoebe Bridgers – <em>Punisher</em><br>
+                “Emotional, atmospheric, and beautifully produced.”</li>
+
+            <li><strong>Leo:</strong> Black Sabbath – <em>Paranoid</em><br>
+                “Heavy, timeless, and essential for rock fans.”</li>
+
+            <li><strong>Megan:</strong> Fleetwood Mac – <em>Tusk</em><br>
+                “Underrated gem — weird, bold, and fantastic.”</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Abraxas Wax | Eau Claire, WI</p>
+    </footer>
+
+</body>

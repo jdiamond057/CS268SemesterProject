@@ -1,7 +1,6 @@
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
     background-color: #fffaf1;
-    color: #222;
     margin: 0;
     padding: 0;
 }
@@ -12,6 +11,7 @@ header {
     text-align: center;
     padding: 1.5em 0;
     border-bottom: 4px solid #ffcc00;
+    user-select: none;
 }
 
 header h1 {
@@ -117,6 +117,8 @@ nav a:hover, nav a.active {
 
 .product:hover {
     transform: scale(1.05);
+    user-select: none;
+    cursor: pointer;
 }
 
 .product img {

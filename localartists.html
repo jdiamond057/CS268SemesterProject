@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Abraxas Wax | Local Artists</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/record-nobackground.png">
+</head>
+
+<body>
+    <header>
+        <h1>Abraxas Wax</h1>
+        <div id="nav"></div>
+        <script>
+            fetch("navbar.html").then(res => res.text()).then(data => {document.getElementById("nav").innerHTML = data;});
+        </script>
+    </header>
+
+    <main class="about">
+        <h3>Eau Claire Artists We Love</h3>
+        <p>Abraxas Wax is proud to support local musicians who keep our city’s music scene vibrant.</p>
+
+        <ul>
+            <li><strong>Bon Iver</strong><br>
+                Indie folk legend with strong Eau Claire roots.</li>
+
+            <li><strong>Yata, Sinz & Orfield</strong><br>
+                Beautiful acoustic-driven folk and jazz-inspired work.</li>
+
+            <li><strong>We Are the Willows</strong><br>
+                Intimate and emotional indie pop.</li>
+
+            <li><strong>Shane Leonard</strong><br>
+                Masterful multi-instrumentalist blending folk, jazz, and indie styles.</li>
+        </ul>
+
+        <p>We carry vinyl and CDs from many local artists. Be sure to check our Shop page or ask a staff member!</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Abraxas Wax | Eau Claire, WI</p>
+    </footer>
+
+</body>

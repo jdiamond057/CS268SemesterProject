@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Abraxas Wax | Events</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/record-nobackground.png">
+</head>
+
+<body>
+    <header>
+        <h1>Abraxas Wax</h1>
+        <div id="nav"></div>
+        <script>
+            fetch("navbar.html").then(res => res.text()).then(data => {document.getElementById("nav").innerHTML = data;});
+        </script>
+    </header>
+
+    <main class="about">
+        <h3>Upcoming Events</h3>
+
+        <ul>
+            <li><strong>Vinyl Listening Party:</strong>  
+                February 22, 2025 — Featuring classic 70s rock albums played in full.</li>
+
+            <li><strong>Local Artist Showcase:</strong>  
+                March 8, 2025 — Live acoustic sets from Eau Claire musicians.</li>
+
+            <li><strong>Record Store Day:</strong>  
+                April 19, 2025 — Exclusive releases, giveaways, and early opening hours.</li>
+
+            <li><strong>Jazz Night:</strong>  
+                May 3, 2025 — A curated evening of essential jazz LPs.</li>
+        </ul>
+
+        <p>All events are free and open to everyone. Come hang out, listen, and support local music!</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Abraxas Wax | Eau Claire, WI</p>
+    </footer>
+
+</body>

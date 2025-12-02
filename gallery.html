@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Abraxas Wax | Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/record-nobackground.png">
+</head>
+
+<body>
+    <header>
+        <h1>Abraxas Wax</h1>
+        <div id="nav"></div>
+        <script>
+            fetch("navbar.html").then(res => res.text()).then(data => {document.getElementById("nav").innerHTML = data;});
+        </script>
+    </header>
+
+    <main class="about">
+        <h2>Gallery</h2>
+        <p>Live updates pulled from our Instagram — events, new arrivals, behind-the-scenes and more.</p>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Abraxas Wax | Eau Claire, WI</p>
+    </footer>
+
+</body>

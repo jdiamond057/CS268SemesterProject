@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Abraxas Wax | FAQ</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/record-nobackground.png">
+</head>
+
+<body>
+    <header>
+        <h1>Abraxas Wax</h1>
+        <div id="nav"></div>
+        <script>
+            fetch("navbar.html").then(res => res.text()).then(data => {document.getElementById("nav").innerHTML = data;});
+        </script>
+    </header>
+
+    <main class="about">
+        <h3>Frequently Asked Questions</h3>
+
+        <p><strong>Do you buy used records?</strong><br>
+        Yes! Bring in your vinyl and we’ll evaluate it for cash or store credit.</p>
+
+        <p><strong>Do you take special orders?</strong><br>
+        Absolutely. If we don’t have it in stock, we’ll do our best to order it.</p>
+
+        <p><strong>Can I listen before buying?</strong><br>
+        Yes — we have a listening station available during business hours.</p>
+
+        <p><strong>Do you sell turntables or gear?</strong><br>
+        Yes! We carry beginner-friendly setups, needles, sleeves, and cleaning kits.</p>
+
+        <p><strong>What is your return policy?</strong><br>
+        New vinyl: exchange-only for manufacturer defects.  
+        Used vinyl: all sales final.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Abraxas Wax | Eau Claire, WI</p>
+    </footer>
+
+</body>
