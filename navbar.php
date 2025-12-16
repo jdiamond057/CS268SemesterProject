@@ -8,6 +8,7 @@ if (session_status() === PHP_SESSION_NONE) {
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="shop.php">Shop</a></li>
+        <li><a href="cart.php"> Cart</a></li>
         <li><a href="localartists.html">Local Artists</a></li>
         <li><a href="events.html">Events</a></li>
         <li><a href="staffpicks.html">Staff Picks</a></li>

@@ -1,3 +1,12 @@
+<?php
+session_start();
+$conn = new mysqli("localhost", "root", "", "abraxaswax", 3307);
+
+
+$sql = "SELECT id, title, price, image, artist FROM products ORDER BY title ASC";
+$result = $conn->query($sql);
+?>
+
 <!DOCTYPE html>
 
 <head>
@@ -17,33 +26,26 @@
         </script>
     </header>
 
-    <main class="shop">
+    <main class="container">
         <h2>Our Collection</h2>
         <div class="product-grid">
 
-            <a href="product.php?id=1" class="product">
-                <img src="images/dark-side-of-the-moon.jpg" alt="Pink Floyd">
-                <h3>Pink Floyd – Dark Side of the Moon</h3>
-                <p>$29.99</p>
-            </a>
-
-            <a href="product.php?id=2" class="product">
-                <img src="images/rumors.jpg" alt="Fleetwood Mac">
-                <h3>Fleetwood Mac – Rumours</h3>
-                <p>$24.99</p>
-            </a>
-
-            <a href="product.php?id=3" class="product">
-                <img src="images/abbey-road.jpg" alt="The Beatles">
-                <h3>The Beatles – Abbey Road</h3>
-                <p>$34.99</p>
-            </a>
-
-            <a href="product.php?id=4" class="product">
-                <img src="images/igor.jpg" alt="Tyler, the Creator">
-                <h3>Tyler, the Creator – Igor</h3>
-                <p>$27.99</p>
-            </a>
+            <?php 
+            if ($result->num_rows > 0) {
+                while($row = $result->fetch_assoc()) {
+                    echo '<a href="product.php?id=' . $row["id"] . '" class="product">';
+                    echo '  <img src="' . htmlspecialchars($row["image"]) . '" alt="' . htmlspecialchars($row["title"]) . '">';
+                    echo '  <h3>' . htmlspecialchars($row["title"]) . '</h3>';
+                    echo '  <h4>' . htmlspecialchars($row["artist"]) . '</h4>';
+                    echo '  <p>$' . number_format($row["price"], 2) . '</p>';
+                    echo '</a>';
+                }
+            } else {
+                echo "<p>Sorry, there are no records in our collection right now.</p>";
+            }
+            
+            $conn->close();
+            ?>
 
         </div>
     </main>

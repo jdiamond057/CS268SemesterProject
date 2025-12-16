@@ -23,6 +23,7 @@ if (!$product) {
 <head>
     <title><?= htmlspecialchars($product["title"]) ?> | Abraxas Wax</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/record-nobackground.png">
 </head>
 <body>
 
@@ -30,11 +31,13 @@ if (!$product) {
     <h1>Abraxas Wax</h1>
     <div id="nav"></div>
     <script>
-        fetch("navbar.php").then(r => r.text()).then(d => nav.innerHTML = d);
-    </script>
+            fetch("navbar.php").then(res => res.text()).then(data => { 
+                document.getElementById("nav").innerHTML = data;
+            });
+        </script>
 </header>
 
-<main class="product-page">
+<main class="container">
     <div class="product-layout">
         <div class="product-image">
             <img src="<?= $product["image"] ?>" alt="<?= htmlspecialchars($product["title"]) ?>">
@@ -63,6 +66,10 @@ if (!$product) {
 
     <a class="btn" href="shop.php">← Back to Shop</a>
 </main>
+
+<footer>
+    <p>&copy; 2025 Abraxas Wax | Eau Claire, WI</p>
+</footer>
 
 </body>
 </html>

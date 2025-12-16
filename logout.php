@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 // Remove all session variables
 $_SESSION = [];
 

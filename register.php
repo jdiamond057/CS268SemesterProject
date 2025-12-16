@@ -19,6 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <head>
     <title>Register | Abraxas Wax</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/record-nobackground.png">
 </head>
 <body>
 
@@ -32,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     </script>
 </header>
 
-<div class="about auth-box">
+<div class="container small">
     <h3>Create an Account</h3>
 
     <form method="post">
@@ -47,6 +48,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <a href="login.php">Login here</a>
     </p>
 </div>
+
+<footer>
+    <p>&copy; 2025 Abraxas Wax | Eau Claire, WI</p>
+</footer>
 
 </body>
 </html>
