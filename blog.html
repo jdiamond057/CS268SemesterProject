@@ -11,7 +11,9 @@
         <h1>Abraxas Wax</h1>
         <div id="nav"></div>
         <script>
-            fetch("navbar.html").then(res => res.text()).then(data => {document.getElementById("nav").innerHTML = data;});
+            fetch("navbar.php").then(res => res.text()).then(data => { 
+                document.getElementById("nav").innerHTML = data;
+            });
         </script>
     </header>
 

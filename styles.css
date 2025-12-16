@@ -36,6 +36,11 @@ nav a {
     transition: 0.2s ease;
 }
 
+.nav-login {
+    position: absolute;
+    right: 1.5em;
+}
+
 nav a:hover, nav a.active {
     color: #ffcc00;
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
@@ -113,6 +118,8 @@ nav a:hover, nav a.active {
     height: auto;
     padding: 1em;
     transition: transform 0.2s ease;
+    text-decoration: none;
+    color: inherit;
 }
 
 .product:hover {
@@ -128,6 +135,7 @@ nav a:hover, nav a.active {
     border-radius: 10px;
     border: 3px solid #ffcc00;
 }
+
 
 form {
     display: flex;
@@ -163,4 +171,95 @@ footer {
     color: #fff;
     border-top: 4px solid #ffcc00;
     margin-top: 3em;
+}
+
+.login-btn {
+    background-color: #ffcc00;
+    color: #222;
+    padding: 0.4em 0.9em;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.login-btn:hover {
+    background-color: #fff;
+}
+
+.auth-box {
+    max-width: 500px;
+    text-align: center;
+}
+
+.auth-box h3 {
+    margin-bottom: 1em;
+}
+
+.auth-error {
+    color: #c0392b;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.auth-switch {
+    margin-top: 1em;
+    font-size: 0.95em;
+}
+
+.auth-switch a {
+    color: #00b4d8;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.auth-switch a:hover {
+    text-decoration: underline;
+}
+
+.product-page {
+    max-width: 1000px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #fffdf7;
+    border-radius: 15px;
+    border: 3px solid #ffcc00;
+}
+
+.product-layout {
+    display: flex;
+    gap: 3em;
+}
+
+.product-image img {
+    width: 350px;
+    border-radius: 15px;
+    border: 3px solid #ffcc00;
+}
+
+.product-info h2 {
+    color: #ff7b54;
+    font-family: 'Cooper Black', sans-serif;
+}
+
+.price {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin: 0.5em 0;
+}
+
+.description {
+    margin: 1em 0;
+}
+
+.product-actions {
+    display: flex;
+    gap: 1em;
+    margin-top: 1.5em;
+}
+
+.product-actions button {
+    padding: 0.8em 1.4em;
+}
+
+.buy-now {
+    background-color: #ff7b54;
 }

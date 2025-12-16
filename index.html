@@ -11,14 +11,16 @@
         <h1>Abraxas Wax</h1>
         <div id="nav"></div>
         <script>
-            fetch("navbar.html").then(res => res.text()).then(data => {document.getElementById("nav").innerHTML = data;});
+            fetch("navbar.php").then(res => res.text()).then(data => { 
+                document.getElementById("nav").innerHTML = data;
+            });
         </script>
     </header>
 
     <section class="hero">
         <h2>Spin the classics. Discover something new.</h2>
         <p>Located in Eau Claire, Abraxas Wax is your local record store for vinyl, turntables, and good vibes.</p>
-        <a href="shop.html" class="btn">Browse Records</a>
+        <a href="shop.php" class="btn">Browse Records</a>
     </section>
 
     <section class="about">
